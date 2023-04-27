@@ -13,8 +13,16 @@ public class MathCalculator {
                 + divide(first, second);
     }
 
+    public static double addAllElement(double first, double second) {
+        return add(first, second)
+                + divide(first, second)
+                + sum(first, second)
+                + multiply(first, second);
+    }
+
     public static void main(String[] args) {
-        System.out.println("Результат расчета равен: " + sumAndMultiply(11, 20));
-        System.out.println("Результат расчета равен: " + addAndDivide(30, 5));
+        System.out.println("first = 11  second = 20 Результат расчета равен: " + sumAndMultiply(11, 20));
+        System.out.println("first = 11  second = 20 Результат расчета равен: " + addAndDivide(11, 20));
+        System.out.println("Cумма всех элементов: " + addAllElement(11, 20));
     }
 }
