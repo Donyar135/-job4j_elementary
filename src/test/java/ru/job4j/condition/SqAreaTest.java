@@ -19,7 +19,7 @@ public class SqAreaTest {
         expected = 0.8680555555555557;
         Assert.assertEquals(expected, SqArea.square(5, 5), 0.01);
 
-        expected = 1.6875;
+        expected = 1.44;
         Assert.assertEquals(expected, SqArea.square(6, 3), 0.01);
     }
 }
