@@ -6,20 +6,38 @@ import org.junit.Test;
 public class SqAreaTest {
 
     @Test
-    public void whenP6K2Square2() {
+    public void whenP6K2Square() {
         double expected = 2;
         double p = 6;
         double k = 2;
         double out = SqArea.square(p, k);
         Assert.assertEquals(expected, out, 0.01);
+    }
 
-        expected = 0.1875;
-        Assert.assertEquals(expected, SqArea.square(2, 3), 0.01);
+    @Test
+    public void whenP2K3Square() {
+        double expected = 0.1875;
+        double p = 2;
+        double k = 3;
+        double out = SqArea.square(p, k);
+        Assert.assertEquals(expected, out, 0.01);
+    }
 
-        expected = 0.8680555555555557;
-        Assert.assertEquals(expected, SqArea.square(5, 5), 0.01);
+    @Test
+    public void whenP5K5Square() {
+        double expected = 0.8680555555555557;
+        double p = 5;
+        double k = 5;
+        double out = SqArea.square(p, k);
+        Assert.assertEquals(expected, out, 0.01);
+    }
 
-        expected = 1.25;
-        Assert.assertEquals(expected, SqArea.square(6, 5), 0.01);
+    @Test
+    public void whenP6K5Square() {
+        double expected = 1.25;
+        double p = 6;
+        double k = 5;
+        double out = SqArea.square(p, k);
+        Assert.assertEquals(expected, out, 0.01);
     }
 }
