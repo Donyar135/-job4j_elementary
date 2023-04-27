@@ -20,6 +20,6 @@ public class SqAreaTest {
         Assert.assertEquals(expected, SqArea.square(5, 5), 0.01);
 
         expected = 1.44;
-        Assert.assertEquals(expected, SqArea.square(6, 3), 0.01);
+        Assert.assertEquals(expected, SqArea.square(6, 4), 0.01);
     }
 }
