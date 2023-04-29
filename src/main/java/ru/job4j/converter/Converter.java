@@ -29,4 +29,5 @@ public class Converter {
         boolean result = expected == out;
         System.out.println("6_000 rubles are 100. Test result : " + result);
     }
+    
 }
