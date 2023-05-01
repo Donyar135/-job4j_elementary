@@ -18,7 +18,7 @@ public class Max {
         System.out.println(result);
         int result1 = Max.min(5, 2);
         System.out.println(result1);
-        int result2 = Max.isEqual(5, 2);
+        int result2 = Max.isEqual(5, 6);
         System.out.println(result2);
     }
 }
