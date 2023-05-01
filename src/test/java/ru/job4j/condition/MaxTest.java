@@ -15,20 +15,20 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMin1To2Then1() {
-        int left = 1;
-        int right = 2;
-        int result = Max.min(left, right);
-        int expected = 1;
+    public void whenMax5To3Then5() {
+        int left = 5;
+        int right = 3;
+        int result = Max.max(left, right);
+        int expected = 5;
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
-    public void whenIsEqual1To2Then2() {
-        int left = 1;
-        int right = 2;
-        int result = Max.isEqual(left, right);
-        int expected = 2;
+    public void whenMax4To4Then4() {
+        int left = 4;
+        int right = 4;
+        int result = Max.max(left, right);
+        int expected = 4;
         assertThat(result).isEqualTo(expected);
     }
 }
