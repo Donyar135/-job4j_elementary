@@ -13,17 +13,16 @@ public class ArrayDefinition {
         String petr = names[1];
         String egor = names[2];
         String oleg = names[3];
-
         System.out.println(names[0]
-                + " \n" + names[1]
-                + " \n" + names[2]
-                + " \n" + names[3]
-                + " \n");
+                + System.lineSeparator() + names[1]
+                + System.lineSeparator() + names[2]
+                + System.lineSeparator() + names[3]
+                + System.lineSeparator());
 
         System.out.println(dani
-                + " \n" + petr
-                + " \n" + egor
-                + " \n" + oleg);
+                + System.lineSeparator() + petr
+                + System.lineSeparator() + egor
+                + System.lineSeparator() + oleg);
     }
 
 }
