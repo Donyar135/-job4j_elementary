@@ -7,4 +7,5 @@ public class SwitchArray {
         array[dest] = temp;
         return array;
     }
+
 }
