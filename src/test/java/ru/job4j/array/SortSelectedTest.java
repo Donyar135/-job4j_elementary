@@ -22,9 +22,9 @@ public class SortSelectedTest {
 
     @Test
     public void whenSort27412411() {
-        int[] data = new int[] {27, 4, 12, 41, 1};
+        int[] data = new int[] {27, 4, 12, 40, 1};
         int[] result = SortSelected.sort(data);
-        int[] expected = new int[] {1, 4, 12, 27, 41};
+        int[] expected = new int[] {1, 4, 12, 27, 40};
         assertThat(result).containsExactly(expected);
     }
 }
