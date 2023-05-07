@@ -19,7 +19,7 @@ public class MinDiapasonTest {
         int[] array = new int[] {10, 5, 3, 1};
         int start = 1;
         int finish = 3;
-        int result = MinDiapason.findMin(array, start, finish);
+        int result = MinDiapason.findMin(array, 1, 3);
         int expected = 1;
         assertThat(result).isEqualTo(expected);
     }
