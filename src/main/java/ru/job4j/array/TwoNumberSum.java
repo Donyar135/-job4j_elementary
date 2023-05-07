@@ -12,6 +12,9 @@ public class TwoNumberSum {
                 }
             }
         }
-        return ar;
+        if (ar[0] != ar[1]) {
+            return ar;
+        }
+        return new int[0];
     }
 }

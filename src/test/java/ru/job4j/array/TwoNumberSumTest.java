@@ -38,5 +38,6 @@ class TwoNumberSumTest {
         int[] result = TwoNumberSum.getIndexes(array, target);
         int[] expected = {2, 4};
         assertThat(result).isEqualTo(expected);
+
     }
 }
