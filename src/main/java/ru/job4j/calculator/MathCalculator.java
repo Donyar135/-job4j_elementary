@@ -3,26 +3,32 @@ package ru.job4j.calculator;
 import static ru.job4j.math.MathFunction.*;
 
 public class MathCalculator {
-    public static double sumAndMultiply(double first, double second) {
-        return sum(first, second)
-                + multiply(first, second);
+    private static int x = 5;
+
+    public static double plusAndMinus(double first, double second) {
+        return plus(first, x)
+                + minus(first, second);
     }
 
-    public static double addAndDivide(double first, double second) {
-        return add(first, second)
-                + divide(first, second);
+    public double multiplyAndDivide(double first) {
+        return multiply(first, x)
+                + divide(first, x);
     }
 
-    public static double addAllElement(double first, double second) {
-        return add(first, second)
-                + divide(first, second)
-                + sum(first, second)
-                + multiply(first, second);
+    public double addAllElement(double first, double second) {
+        return plus(first, second)
+                + minus(first, x)
+                + multiply(first, second)
+                + divide(first, x);
     }
 
     public static void main(String[] args) {
-        System.out.println("first = 11  second = 20 Результат расчета равен: " + sumAndMultiply(11, 20));
-        System.out.println("first = 11  second = 20 Результат расчета равен: " + addAndDivide(11, 20));
-        System.out.println("Cумма всех элементов: " + addAllElement(11, 20));
+        System.out.println("first = 11  x = 5 Результат расчета равен: " + plusAndMinus(11, 20));
+        MathCalculator divide = new MathCalculator();
+        double result = divide.multiplyAndDivide(11);
+        System.out.println("first = 11  x = 5 Результат расчета равен: " + result);
+        MathCalculator calculator = new MathCalculator();
+        double all = calculator.addAllElement(11, 20);
+        System.out.println("Cумма всех элементов: " + all);
     }
 }
