@@ -6,12 +6,12 @@ public class MathCalculator {
     private static int x = 5;
 
     public static double plusAndMinus(double first, double second) {
-        return plus(first, x)
-                + minus(first, second);
+        return plus(first, second)
+                + minus(first, x);
     }
 
-    public double multiplyAndDivide(double first) {
-        return multiply(first, x)
+    public double multiplyAndDivide(double first, double second) {
+        return multiply(first, second)
                 + divide(first, x);
     }
 
@@ -25,7 +25,7 @@ public class MathCalculator {
     public static void main(String[] args) {
         System.out.println("first = 11  x = 5 Результат расчета равен: " + plusAndMinus(11, 20));
         MathCalculator divide = new MathCalculator();
-        double result = divide.multiplyAndDivide(11);
+        double result = divide.multiplyAndDivide(11, 20);
         System.out.println("first = 11  x = 5 Результат расчета равен: " + result);
         MathCalculator calculator = new MathCalculator();
         double all = calculator.addAllElement(11, 20);
