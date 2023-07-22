@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class PointTest {
     @Test
-    public void when00to20then2() {
+    public void when00to20then2dot82() {
         double expected = 2.82;
         Point a = new Point(1, 2);
         Point b = new Point(3, 4);
