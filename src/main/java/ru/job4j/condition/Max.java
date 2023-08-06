@@ -5,6 +5,14 @@ public class Max {
         return left > right ? left : right;
     }
 
+    public static int max(int first, int second, int third) {
+        return (first > second ? first : second) > third ? first > second ? first : second : third;
+    }
+
+    public static int max(int first, int second, int third, int fours) {
+        return max(first, second, third) > fours ? max(first, second, third) : fours;
+    }
+
     public static void main(String[] args)  {
         int result = Max.max(5, 2);
         System.out.println(result);
