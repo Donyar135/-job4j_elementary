@@ -10,7 +10,7 @@ public class Max {
     }
 
     public static int max(int first, int second, int third, int fours) {
-        return max(first, second, third) > fours ? max(first, second, third) : fours;
+        return max(first, second, max(third, fours));
     }
 
     public static void main(String[] args)  {
