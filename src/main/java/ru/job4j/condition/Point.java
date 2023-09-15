@@ -4,8 +4,8 @@ import static java.lang.Math.sqrt;
 import static java.lang.Math.pow;
 
 public class Point {
-    private final int x;
-    private final int y;
+    private int x;
+    private int y;
     private int z;
 
     public Point(int first, int second) {
@@ -24,7 +24,7 @@ public class Point {
     }
 
     public double distance3d(Point that) {
-        return sqrt(pow(this.z - that.z, 2)) + distance(that);
+        return sqrt(pow(this.z - that.z, 2) + pow(this.x - that.x, 2) + pow(this.y - that.y, 2));
     }
 
     public static void main(String[] args) {
