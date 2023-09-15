@@ -39,10 +39,10 @@ public class PointTest {
         }
 
         @Test
-        public void when133to255then3() {
-            double expected = 3;
+        public void when133to257then4dot58() {
+            double expected = 4.58;
             Point a = new Point(1, 3, 3);
-            Point b = new Point(2, 5, 5);
+            Point b = new Point(2, 5, 7);
             double out = a.distance3d(b);
             Assert.assertEquals(expected, out, 0.01);
         }
